@@ -1,0 +1,19 @@
+{
+  "name": "time-tracker",
+  "version": "1.0.0",
+  "description": "Time tracker app",
+  "main": "out/main/main.js",
+  "scripts": {
+    "start": "electron-vite preview",
+    "dev": "electron-vite dev",
+    "build": "npm run typecheck && electron-vite build",
+    "typecheck": "tsc --noEmit -p tsconfig.json --composite false",
+    "build:win": "npm run build && electron-builder --win --config"
+  },
+  "author": "Mylapqn",
+  "license": "ISC",
+  "devDependencies": {
+    "electron-vite": "^1.0.23",
+    "typescript": "^5.1.3"
+  }
+}
